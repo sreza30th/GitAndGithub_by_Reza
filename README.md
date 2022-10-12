@@ -120,3 +120,56 @@ $ nano Github.txt
     modified:   Git.txt
     modified:   Github.txt
     modified:   README.md
+19.9. $ git push -u origin differences
+    Enumerating objects: 10, done.
+    Counting objects: 100% (10/10), done.
+    Delta compression using up to 8 threads
+    Compressing objects: 100% (6/6), done.
+    Writing objects: 100% (6/6), 2.34 KiB | 2.34 MiB/s, done.
+    Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+    remote:
+    remote: Create a pull request for 'differences' on GitHub by visiting:
+    remote:      https://github.com/sreza30th/Reza_GitAndGithub/pull/new/differences
+    remote:
+    To https://github.com/sreza30th/Reza_GitAndGithub.git
+* [new branch]      differences -> differences
+  branch 'differences' set up to track 'origin/differences'
+
+20. main branch contains temp, .gitignore, Git.txt, Github.txt, README.md
+    differences branch contains temp, .gitignore, Git.txt, Github.txt,
+    README.md and difference.txt
+
+21. $ git checkout main
+    Switched to branch 'main'
+    Your branch is up to date with 'origin/main'.
+
+sreza@REZA MINGW64 ~/Reza_GitAndGithub (main)
+$ git merge differences
+Updating d164107..4b43751
+Fast-forward
+Git.txt        |  6 ++++
+Github.txt     |  5 ++++
+README.md      | 86 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+difference.txt | 16 +++++++++++
+4 files changed, 113 insertions(+)
+create mode 100644 difference.txt
+
+22. Both branch unchanged.
+
+23. sreza@REZA MINGW64 ~/Reza_GitAndGithub (main)
+    $ git push origin main
+    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/sreza30th/Reza_GitAndGithub.git
+    d164107..4b43751  main -> main
+
+24 . README.md file updated by nano.README.md command
+
+27. sreza@REZA MINGW64 ~/Reza_GitAndGithub (main)
+    $  nano git.txt
+
+sreza@REZA MINGW64 ~/Reza_GitAndGithub (main)
+$ nano Github.txt
+
+29. sreza@REZA MINGW64 ~/Reza_GitAndGithub (main)
+    $ git merge differences
+    Already up to date. 
