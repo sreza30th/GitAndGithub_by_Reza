@@ -6,5 +6,7 @@ This line is added by conflict
 This line is added by Wali
 This line is third line
 New conflict
+This is a brand new line by wali on 14 oct
 This is new line added by reza
+
 
